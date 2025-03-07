@@ -1,0 +1,10 @@
+---
+- name: Change permissions of target path
+  ansible.builtin.file:
+    path: "{{ target_path }}"
+    mode: "{{ target_permissions | default(omit) }}"
+    owner: "{{ target_owner | default(omit) }}"
+    group: "{{ target_group | default(omit) }}"
+    state: touch  # Creates file if it doesn't exist, preserves type if it does
+  become: yes
+  when: target_path is defined
