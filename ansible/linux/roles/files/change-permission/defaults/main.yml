@@ -1,6 +1,0 @@
----
-# Default variables for the change_permissions role
-target_path: "/path/to/your/file_or_folder"  # Default path, can be overridden
-target_permissions: "0644"                    # Default permissions (rw-r--r--)
-target_owner: "root"                         # Default owner
-target_group: "root"                         # Default group

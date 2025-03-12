@@ -1,0 +1,6 @@
+---
+# Default variables for the change_permissions role
+target_path: "/home/vm2/Desktop"  # Default path, can be overridden
+target_permissions: "755"                    # Default permissions (rw-r--r--)
+target_owner: "vm2"                         # Default owner
+target_group: "vm2"                         # Default group
